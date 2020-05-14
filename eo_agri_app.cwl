@@ -1,4 +1,3 @@
-baseCommand: ./usr/local/src/masterclassification/scripts/classify_parcel.py
 class: CommandLineTool
 id: node
 inputs:
@@ -10,15 +9,13 @@ inputs:
     inputBinding:
       position: 2
       prefix: --input-stac=
-    type: File
+    type: File?
 
 outputs:
   result:
     outputBinding:
       glob: '*.geojson'
     type: File
-stderr: std.err
-stdout: std.out
 hints:
   DockerRequirement:
     dockerPull: registry.gitlab.eox.at/maps/masterclassification:ogc_demo
