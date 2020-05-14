@@ -6,7 +6,7 @@ inputs:
     inputBinding:
       position: 1
     type: string
-  staged_stack:
+  staged_stac:
     inputBinding:
       position: 2
       prefix: --input-stac=
