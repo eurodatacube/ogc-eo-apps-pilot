@@ -14,8 +14,8 @@ inputs:
   staged_stac:
     inputBinding:
       position: 3
-      prefix: --input-stac=
-    type: File?
+      prefix: --input-stac
+    type: Directory?
 outputs:
   result:
     outputBinding:
